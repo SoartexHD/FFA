@@ -27,7 +27,13 @@ class FFA extends PluginBase implements Listener
     public function onEnable()
     {
         $this->getServer()->getPluginManager()->registerEvents(new GameListener($this), $this);
-        $this->getLogger()->info(self::PREFIX . "§6aktiviert...");
+        $this->getLogger()->info(
+            " \n ".
+            self::PREFIX ."§aactivated... \n".
+            "§9Writen by §eSoartexHD \n".
+            "§9github: §ehttps://github.com/SoartexHD \n".
+            " \n "
+        );
 
         //FOULDER'S
         $this->createFoulders();
